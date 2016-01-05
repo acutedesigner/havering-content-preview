@@ -44,6 +44,35 @@
 											'link_after'  => '</span>',
 										) );
 									?>
+
+									<?php
+
+										// check if the repeater field has rows of data
+										if( have_rows('intranet_file_downloads') ):
+
+											echo '<h3>File downloads</h3>';
+											echo '<table>';
+
+										 	// loop through the rows of data
+										    while ( have_rows('intranet_file_downloads') ) : the_row();
+
+										        // display a sub field value
+										        $file = get_sub_field('intranet_file');
+
+										        //print_r($file);
+										        echo '<tr><td>'.$file['filename'].'</td><td>'.($file['description'] == '' ? 'No description' : $file['description']).'</td></tr>';
+
+										    endwhile;
+
+										    echo '</table>';
+
+										else :
+
+										    // no rows found
+
+										endif;
+
+									?>
 								</section> <?php // end article section ?>
 
 								<footer class="article-footer cf">
