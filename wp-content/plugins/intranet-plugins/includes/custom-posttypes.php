@@ -4,6 +4,7 @@
 // http://justintadlock.com/archives/2010/07/10/meta-capabilities-for-custom-post-types
 // This allows specific roles to only access a specific CPT
 
+
 //---- Register CPT Help with work
 
 function help_with_work_cpt() {
@@ -49,21 +50,11 @@ function help_with_work_cpt() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
-		'capabilities' => array(
-			'publish_posts' => 'publish_help_with_work',
-			'edit_posts' => 'edit_help_with_work',
-			'edit_others_posts' => 'edit_others_help_with_work',
-			'delete_posts' => 'delete_help_with_work',
-			'delete_others_posts' => 'delete_others_help_with_work',
-			'read_private_posts' => 'read_private_help_with_work',
-			'edit_post' => 'edit__help_with_work',
-			'delete_post' => 'delete__help_with_work',
-			'read_post' => 'read__help_with_work',
-		),
+
 	);
 
 	register_post_type( 'help-with-work', $args );
@@ -157,7 +148,7 @@ function support_for_you_cpt() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -252,7 +243,7 @@ function human_resources_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -347,7 +338,7 @@ function self_service_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -442,7 +433,7 @@ function ict_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -536,7 +527,7 @@ function committee_services_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -631,7 +622,7 @@ function health_and_safety_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -725,7 +716,7 @@ function our_services_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
@@ -820,7 +811,7 @@ function about_havering_post_type() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => true,		
+		'has_archive'           => true,
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
