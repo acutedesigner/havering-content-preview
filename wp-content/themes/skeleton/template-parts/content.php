@@ -39,6 +39,27 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+		<?php if( have_rows('file_resources') ): ?>
+		<h2>File downloads</h2>
+		<table style="border: 1px solid #CCCCCC;">
+		<?php
+			while ( have_rows('file_resources') ) : the_row();
+				$file = get_sub_field('file_resource_download');
+		?>
+
+			<tr>
+				<td><a href="<?php echo $file['url']; ?>"><?php echo $file['title']; ?></a></td>
+				<td><?php echo $file['description']; ?></td>
+				<td><?php echo $file['type']; ?></td>
+			</tr>
+
+		<?php endwhile;?>
+		</table>
+		<?php else: ?>
+
+		<?php endif; ?>
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
