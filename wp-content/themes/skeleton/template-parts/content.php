@@ -1,4 +1,5 @@
-te part for displaying posts.
+<?php
+/* te part for displaying posts.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -40,7 +41,7 @@ te part for displaying posts.
 
 		<?php if( have_rows('file_resources') ): ?>
 		<h2>File downloads</h2>
-		<table style="border: 1px solid #CCCCCC;">
+		<table>
 		<?php
 			while ( have_rows('file_resources') ) : the_row();
 				$file = get_sub_field('file_resource_download');
@@ -64,4 +65,3 @@ te part for displaying posts.
 		<?php skeleton_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
-
