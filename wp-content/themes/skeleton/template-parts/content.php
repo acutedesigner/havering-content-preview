@@ -1,6 +1,4 @@
-<?php
-/**
- * Template part for displaying posts.
+te part for displaying posts.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -66,3 +64,4 @@
 		<?php skeleton_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
+
